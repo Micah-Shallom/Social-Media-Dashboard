@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import 'variables';
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter',sans-serif;
+    background-color:#ccc;
+}
+
+.container{
+    max-width: 375px;
+    margin: auto;
+    background-color: $White-BG;
+    padding: 30px 20px 40px 20px;
+    position: relative;
+
+    .titlechange{
+        font-weight: 900;
+        color: $Very-Dark-Blue-Text;
+        margin-bottom: 20px;
+    }
+    .subtitlechange{
+        color: $Dark-Grayish-Blue-Text;
+        font-size: 14px;
+    }
+    .uppermedia-header-right{
+        display: flex;
+        justify-content: space-between;
+
+        p.toggle{
+            color:#fff;
+        }
+        .toggleWrap{
+            margin-left: 8px;
+            cursor: pointer;
+            .toggler{
+                background-color: $Toggle-Light;
+                display: inline-flex;
+                align-items: center;
+                padding: 0 3px;
+                height: 20px;
+                width: 50px;
+                border-radius: 50px;
+                &.toggled{
+                    justify-content: flex-end;
+                    background: $Toggle-Dark;
+                }
+                span{
+                    display: inline-block;
+                    border-radius: 50%;
+                    height: 15px;
+                    width: 15px;
+                    background-color: $White-BG;
+                }
+                .switch.toggle{
+                    background-color: $Very-Dark-Blue-BG;
+                }
+            }
+        }
+    }
+    .iconup-group{
+        color: $Lime-Green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .iconup{
+            @include mediaIcon('../images/icon-up.svg',10px);
+        }
+    }
+    .icondown-group{
+        color: $Bright-Red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            .icondown{
+                @include mediaIcon('../images/icon-down.svg',10px);
+            }
+    }
+    .component{
+        background-color: $Light-Grayish-Blue-Card-BG;
+        margin-bottom: 15px;
+        padding: 10px 10px;
+        
+    }
+    .instagrams{
+       border-top: 5px solid;
+       border-image-slice: 39;
+       border-image-source: $Instagram;
+       background-clip: padding-box;
+    }
+    
+    .youtubes{
+        border-top: 5px solid $YouTube;
+    }
+    .facebooks{
+        border-top: 5px solid $Facebook;
+    }
+    .twitters{
+        border-top: 5px solid $Twitter;
+    }
+    
+
+    .uppermedia{
+        &-header{
+            &-left{
+                padding-bottom: 20px;
+                border-bottom: 2px solid $Dark-Grayish-Blue-Text;
+            }
+            &-right{
+                padding: 10px 0;
+                margin-bottom: 40px;
+            }
+        }
+        &-body{
+            &-component{
+                @include upperCompConfig(red,15px);
+
+                &-top{
+                    display: inline-flex;
+                    justify-content: center;
+                    .instagram{
+                        @include mediaIcon('../images/icon-instagram.svg',20px)
+                    }
+                    .twitter{
+                        @include mediaIcon('../images/icon-twitter.svg',20px)
+                    }
+                    .youtube{
+                        @include mediaIcon('../images/icon-youtube.svg',20px)
+                    }
+                    .facebook{
+                        @include mediaIcon('../images/icon-facebook.svg',20px)
+                    }
+                }
+                
+            }
+        }
+    }
+    .lowermedia-body-component{
+        &-top{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            .facebook{
+                @include mediaIcon('../images/icon-facebook.svg',20px);
+            }
+            .instagram{
+                @include mediaIcon('../images/icon-instagram.svg',20px)
+            }
+            .twitter{
+                @include mediaIcon('../images/icon-twitter.svg',20px)
+            }
+            .youtube{
+                @include mediaIcon('../images/icon-youtube.svg',20px)
+            }
+        }
+        &-lower{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    .attribution { 
+        font-size: 15px;
+        text-align: center; 
+        color: $Dark-Grayish-Blue-Text;
+    }
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+}
+
+//Toggled Changes
+.container.toggle{
+    background-color: $Very-Dark-Blue-BG;
+}
+.component.toggle{
+    background-color: $Dark-Desaturated-Blue;
+}
+.titlechange.toggle{
+    color: $White;
+}
+@import 'responsive';

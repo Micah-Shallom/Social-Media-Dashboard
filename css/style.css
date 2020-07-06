@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter',sans-serif;
+  background-color: #ccc;
+}
+
+.container {
+  max-width: 375px;
+  margin: auto;
+  background-color: white;
+  padding: 30px 20px 40px 20px;
+  position: relative;
+}
+
+.container .titlechange {
+  font-weight: 900;
+  color: #1e202a;
+  margin-bottom: 20px;
+}
+
+.container .subtitlechange {
+  color: #63687e;
+  font-size: 14px;
+}
+
+.container .uppermedia-header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .uppermedia-header-right p.toggle {
+  color: #fff;
+}
+
+.container .uppermedia-header-right .toggleWrap {
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.container .uppermedia-header-right .toggleWrap .toggler {
+  background-color: #aeb3cb;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 3px;
+  height: 20px;
+  width: 50px;
+  border-radius: 50px;
+}
+
+.container .uppermedia-header-right .toggleWrap .toggler.toggled {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background: -webkit-gradient(linear, left top, left bottom, from(#378fe6), to(#3eda82));
+  background: linear-gradient(#378fe6, #3eda82);
+}
+
+.container .uppermedia-header-right .toggleWrap .toggler span {
+  display: inline-block;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  background-color: white;
+}
+
+.container .uppermedia-header-right .toggleWrap .toggler .switch.toggle {
+  background-color: #1e202a;
+}
+
+.container .iconup-group {
+  color: #1db489;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .iconup-group .iconup {
+  background: url("../images/icon-up.svg") center no-repeat;
+  display: block;
+  background-size: contain;
+  height: 10px;
+  width: 10px;
+  margin-right: 5px;
+}
+
+.container .icondown-group {
+  color: #dc414c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .icondown-group .icondown {
+  background: url("../images/icon-down.svg") center no-repeat;
+  display: block;
+  background-size: contain;
+  height: 10px;
+  width: 10px;
+  margin-right: 5px;
+}
+
+.container .component {
+  background-color: #f0f2fa;
+  margin-bottom: 15px;
+  padding: 10px 10px;
+}
+
+.container .instagrams {
+  border-top: 5px solid;
+  border-image-slice: 39;
+  border-image-source: linear-gradient(#fdc468, #df4996);
+  background-clip: padding-box;
+}
+
+.container .youtubes {
+  border-top: 5px solid #c4032a;
+}
+
+.container .facebooks {
+  border-top: 5px solid #198ff5;
+}
+
+.container .twitters {
+  border-top: 5px solid #1ca0f2;
+}
+
+.container .uppermedia-header-left {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #63687e;
+}
+
+.container .uppermedia-header-right {
+  padding: 10px 0;
+  margin-bottom: 40px;
+}
+
+.container .uppermedia-body-component {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 5px;
+}
+
+.container .uppermedia-body-component-top, .container .uppermedia-body-component-middle, .container .uppermedia-body-component-bottom {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.container .uppermedia-body-component-bottom {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.container .uppermedia-body-component-top {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .uppermedia-body-component-top .instagram {
+  background: url("../images/icon-instagram.svg") center no-repeat;
+  display: block;
+  background-size: contain;
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+
+.container .uppermedia-body-component-top .twitter {
+  background: url("../images/icon-twitter.svg") center no-repeat;
+  display: block;
+  background-size: contain;
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+
+.container .uppermedia-body-component-top .youtube {
+  background: url("../images/icon-youtube.svg") center no-repeat;
+  display: block;
+  background-size: contain;
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+
+.container .uppermedia-body-component-top .facebook {
+  background: url("../images/icon-facebook.svg") center no-repeat;
+  display: block;
+  background-size: contain;
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+
+.container .lowermedia-body-component-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.container .lowermedia-body-component-top .facebook {
+  background: url("../images/icon-facebook.svg") center no-repeat;
+  display: block;
+  background-size: contain;
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+
+.container .lowermedia-body-component-top .instagram {
+  background: url("../images/icon-instagram.svg") center no-repeat;
+  display: block;
+  background-size: contain;
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+
+.container .lowermedia-body-component-top .twitter {
+  background: url("../images/icon-twitter.svg") center no-repeat;
+  display: block;
+  background-size: contain;
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+
+.container .lowermedia-body-component-top .youtube {
+  background: url("../images/icon-youtube.svg") center no-repeat;
+  display: block;
+  background-size: contain;
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+
+.container .lowermedia-body-component-lower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .attribution {
+  font-size: 15px;
+  text-align: center;
+  color: #63687e;
+}
+
+.container .attribution a {
+  color: #3e52a3;
+}
+
+.container.toggle {
+  background-color: #1e202a;
+}
+
+.component.toggle {
+  background-color: #252a41;
+}
+
+.titlechange.toggle {
+  color: white;
+}
+
+@media only screen and (min-width: 376px) {
+  .container {
+    max-width: 900px;
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  .container {
+    max-width: 100%;
+    width: 100%;
+    padding: 30px 100px;
+  }
+  .container .uppermedia .uppermedia-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .container .uppermedia .uppermedia-header-left {
+    border-bottom: 0;
+  }
+  .container .uppermedia-body {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0px 10px;
+  }
+  .container .lowermedia-body {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0 10px;
+  }
+}
